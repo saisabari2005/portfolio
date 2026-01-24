@@ -88,7 +88,7 @@ const Experience = () => {
                     </ul>
                   </div>
 
-                  <div className="technologies" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', pt: '15px', borderTop: '1px solid #F3F4F6' }}>
+                  <div className="technologies" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', paddingTop: '15px', borderTop: '1px solid #F3F4F6' }}>
                     {exp.technologies.map((tech) => (
                       <span key={tech} className="badge">
                         {tech}

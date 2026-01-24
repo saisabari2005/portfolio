@@ -17,7 +17,7 @@ const Hero = () => {
 
           <div className="hero-title-wrapper">
             <h2 className="hero-title">
-              AI & Data Science Engineer
+              Aspiring AI & Data Science Engineer
             </h2>
           </div>
 

@@ -33,8 +33,18 @@ const Navigation = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="nav-container">
-          <Link to="home" smooth={true} duration={500} className="logo" style={{ cursor: 'pointer' }}>
-            <span className="logo-icon">SSK</span>
+          <Link to="home" smooth={true} duration={500} className="logo" style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
+            <img
+              src="/logo.jpg"
+              alt="Logo"
+              className="nav-logo-img"
+              style={{ height: '45px', width: 'auto', borderRadius: '8px', objectFit: 'contain' }}
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'block';
+              }}
+            />
+            <span className="logo-icon" style={{ display: 'none' }}>SSK</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -829,30 +829,43 @@ a {
 
 @media (max-width: 768px) {
   .hero-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    /* Reorder: Image top, Text below */
     height: auto;
+    padding-top: 80px;
+    /* Space for fixed navbar */
   }
 
   .hero-left {
     height: auto;
-    padding: 120px 24px 60px;
+    padding: 40px 24px 80px;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
   }
 
   .hero-left::after {
     clip-path: none;
     border-right: none;
     border-bottom: 2px solid var(--color-neon-purple);
+    height: 120%;
+    /* Cover slightly more background */
   }
 
   .hero-right {
     height: auto;
-    padding: 60px 0;
+    padding: 40px 0 20px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-wrapper {
+    width: min(280px, 60vw);
+    height: min(280px, 60vw);
   }
 
   .hero-title {
@@ -864,22 +877,29 @@ a {
   }
 
   .section {
-    padding: 80px 24px;
+    padding: 60px 24px;
   }
 
   .hero-name {
-    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
     white-space: normal;
+    margin-top: 10px;
   }
 
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     width: 100%;
   }
 
   .section-title::after {
     margin: 15px auto 0;
+  }
+
+  /* Reduce About photo size on mobile to avoid overcrowding */
+  .about-photo-wrapper img {
+    width: 140px !important;
+    height: 140px !important;
   }
 
   .scroll-indicator {

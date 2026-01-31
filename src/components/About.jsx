@@ -32,7 +32,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             style={{ display: 'flex', justifyContent: 'center', marginBottom: '60px' }}
           >
-            <div className="about-photo-wrapper" style={{ padding: '5px', background: '#000000', borderRadius: '50%' }}>
+            <div className="about-photo-wrapper" style={{ padding: '5px', background: 'var(--color-neon-purple)', borderRadius: '50%' }}>
               <img
                 src="/saisabarinath.jpg"
                 alt="Sai Sabarinath K"
@@ -50,7 +50,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p>
-                I'm <strong style={{ color: '#000000' }}>Sai Sabarinath K</strong>, an AI and Data Science enthusiast pursuing my B.Tech at{' '}
+                I'm <strong>Sai Sabarinath K</strong>, an AI and Data Science enthusiast pursuing my B.Tech at{' '}
                 <strong>Jeppiaar Engineering College</strong>. My passion lies in transforming complex data into intelligent solutions through the power of AI, Natural Language Processing, and Computer Vision.
               </p>
 
@@ -65,7 +65,7 @@ const About = () => {
 
               <p>
                 Beyond coding, I'm constantly exploring emerging AI technologies, experimenting with new frameworks, and contributing to open-source projects. I believe in{' '}
-                <strong style={{ color: '#000000' }}>learning by building</strong>, and every project is an opportunity to push the boundaries of what's possible with AI.
+                <strong>learning by building</strong>, and every project is an opportunity to push the boundaries of what's possible with AI.
               </p>
             </motion.div>
 
@@ -86,11 +86,11 @@ const About = () => {
                   whileHover={{ scale: 1.05 }}
                   style={{ textAlign: 'center' }}
                 >
-                  <div className="stat-icon" style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center', color: '#000000' }}>
+                  <div className="stat-icon" style={{ marginBottom: '15px', display: 'flex', justifyContent: 'center', color: 'var(--color-neon-cyan)' }}>
                     <stat.icon size={32} />
                   </div>
-                  <div className="stat-value" style={{ fontSize: '2rem', fontWeight: 900, color: '#000000' }}>{stat.value}</div>
-                  <div className="stat-label" style={{ fontSize: '0.875rem', color: '#6B7280', fontWeight: 600, textTransform: 'uppercase' }}>{stat.label}</div>
+                  <div className="stat-value" style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--color-neon-purple)' }}>{stat.value}</div>
+                  <div className="stat-label" style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)', fontWeight: 600, textTransform: 'uppercase' }}>{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>

@@ -91,7 +91,7 @@ const Hero = () => {
             <div className="photo-glow"></div>
             <div className="photo-border">
               <img
-                src="/saisabarinath.jpg"
+                src="/saisabarinath (2).png"
                 alt="Sai Sabarinath K"
                 className="profile-photo"
                 loading="eager"
